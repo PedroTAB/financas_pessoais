@@ -553,7 +553,9 @@ hr { border-color: rgba(84,84,88,0.22) !important; border-width: 0.5px !importan
 
 /* ── Responsivo — Mobile ── */
 @media (max-width: 768px) {
-    div[data-testid="stSidebar"] { min-width: 56px !important; max-width: 56px !important; }
+    div[data-testid="stSidebar"] { display: none !important; }
+    section.main > div.block-container { padding: .75rem 1rem 1.25rem !important; max-width: 100% !important; }
+
     .sb-logo-name, .sb-section, .sb-divider { display: none !important; }
     .sb-footer-name { display: none !important; }
     .sb-footer { padding: 10px 6px !important; }
@@ -575,8 +577,6 @@ hr { border-color: rgba(84,84,88,0.22) !important; border-width: 0.5px !importan
         display: inline-block !important;
     }
 
-    section.main > div.block-container { padding: .75rem 1rem 1.25rem !important; max-width: 100% !important; }
-
     .stTextInput, .stSelectbox, .stNumberInput, .stDateInput, .stTextArea,
     .stMultiSelect, .stButton, .stCheckbox, .stRadio {
         width: 100% !important;
@@ -588,11 +588,19 @@ hr { border-color: rgba(84,84,88,0.22) !important; border-width: 0.5px !importan
         min-width: 0 !important;
     }
 
-    .kpi-val { font-size: 17px !important; }
+    .stSelectbox, .stMultiSelect { margin-bottom: 0.85rem !important; }
+    .stButton > button { padding: 12px 16px !important; }
+    .stTextInput input, .stTextArea textarea { padding: 12px !important; }
+
+    .kpi-val { font-size: 17px !important; line-height: 1.2 !important; }
+    .dash-title { font-size: 1.15rem !important; }
+    .section-label { font-size: .65rem !important; }
+
     .cat-row { grid-template-columns: 100px 1fr 72px 36px; }
     [data-testid="stDataFrame"] { overflow-x: auto !important; }
     .budget-grid { grid-template-columns: 1fr !important; }
     .rank-card { grid-template-columns: 1fr !important; }
+    .cap-table { width: 100% !important; }
 }
 @media (max-width: 480px) {
     .kpi-val { font-size: 14px !important; }
