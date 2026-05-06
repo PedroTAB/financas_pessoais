@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+data/financas.json
+.DS_Store
+
+# Nunca commitar credenciais reais
+.streamlit/secrets.toml

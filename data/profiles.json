@@ -1,0 +1,12 @@
+{
+  "pedro": {
+    "nome": "Pedro",
+    "avatar": "😀",
+    "cor": "#0A84FF"
+  },
+  "joão": {
+    "nome": "João",
+    "avatar": "J",
+    "cor": "#ff0a0e"
+  }
+}
