@@ -65,16 +65,6 @@ for k, v in DEFAULTS.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
-_mobile_pages = [
-    "Dashboard", "Ganhos", "Lancamentos", "Cartao", "Metas",
-    "Importar", "Extrato", "Relatorio", "Configuracoes",
-]
-_mobile_index = _mobile_pages.index(st.session_state.aba) if st.session_state.aba in _mobile_pages else 0
-_mobile_choice = st.selectbox("", _mobile_pages, index=_mobile_index, key="mobile_nav", label_visibility="collapsed")
-if _mobile_choice != st.session_state.aba:
-    st.session_state.aba = _mobile_choice
-    st.rerun()
-
 anos_disp = list(range(max(ANO_MINIMO, ANO_NOW - 5), ANO_NOW + 2))
 anos_disp = sorted(set(anos_disp), reverse=True)
 
