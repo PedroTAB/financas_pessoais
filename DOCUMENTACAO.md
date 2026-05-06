@@ -1433,11 +1433,12 @@ cookie:
 - **Impacto:** Análises avançadas exigem exportar e processar externamente
 - **Solução futura:** Adicionar mais tipos de relatório (comparativo, benchmark, etc.)
 
-### 8. **Mobile experience básica**
+### 8. **Mobile experience aprimorada**
 
-- **Problema:** Streamlit não é otimizado para touch
-- **Impacto:** Em mobile, formulários são fiddly
-- **Solução futura:** Construir app native (React Native) ou PWA
+- **Impacto:** A interface agora oferece melhor usabilidade em smartphone
+- **Melhoria aplicada:** Barra lateral compacta em telas menores, formulários com largura total e gráficos adaptados em cards empilhados
+- **Limitação atual:** Alguns componentes muito largos, como tabelas extensas ou grids complexos, podem exigir scroll horizontal em celulares pequenos
+- **Próximo passo:** Top nav móvel e PWA/mobile native no roadmap
 
 ### 9. **Sem integração bancária direta**
 
