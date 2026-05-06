@@ -554,24 +554,53 @@ hr { border-color: rgba(84,84,88,0.22) !important; border-width: 0.5px !importan
 /* ── Responsivo — Mobile ── */
 @media (max-width: 768px) {
     div[data-testid="stSidebar"] { min-width: 56px !important; max-width: 56px !important; }
-    .sb-brand-name { display: none; }
+    .sb-logo-name, .sb-section, .sb-divider { display: none !important; }
+    .sb-footer-name { display: none !important; }
+    .sb-footer { padding: 10px 6px !important; }
+    .sb-logo-wrap { justify-content: center; padding: 10px 0 12px !important; }
+    .sb-logo-icon { width: 30px; height: 30px; font-size: 1rem; }
+
     .nav-item .stButton > button,
     .nav-active .stButton > button,
     .nav-cta .stButton > button {
-        font-size: 0 !important; padding: 0 !important;
+        font-size: 0 !important;
+        padding: 0 !important;
         justify-content: center !important;
+        min-height: 46px !important;
     }
     .nav-item .stButton > button::first-letter,
     .nav-active .stButton > button::first-letter,
-    .nav-cta .stButton > button::first-letter { font-size: 1.2rem !important; }
-    section.main > div.block-container { padding: .75rem .75rem 1.5rem !important; }
+    .nav-cta .stButton > button::first-letter {
+        font-size: 1.3rem !important;
+        display: inline-block !important;
+    }
+
+    section.main > div.block-container { padding: .75rem 1rem 1.25rem !important; max-width: 100% !important; }
+
+    .stTextInput, .stSelectbox, .stNumberInput, .stDateInput, .stTextArea,
+    .stMultiSelect, .stButton, .stCheckbox, .stRadio {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    .stDataFrame, .stPlotlyChart, .stTable, .stMarkdown {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
     .kpi-val { font-size: 17px !important; }
     .cat-row { grid-template-columns: 100px 1fr 72px 36px; }
     [data-testid="stDataFrame"] { overflow-x: auto !important; }
+    .budget-grid { grid-template-columns: 1fr !important; }
+    .rank-card { grid-template-columns: 1fr !important; }
 }
 @media (max-width: 480px) {
     .kpi-val { font-size: 14px !important; }
     .cat-row { grid-template-columns: 80px 1fr 60px 30px; font-size: .7rem; }
+    .budget-grid { gap: 6px !important; }
+    .rank-card { grid-template-columns: 1fr !important; }
+    section.main > div.block-container { padding: .75rem .75rem 1rem !important; }
+    .stButton > button { font-size: .95rem !important; min-height: 46px !important; padding: 10px 12px !important; }
 }
 
 /* ── Budget capacity cards ── */

@@ -16,7 +16,8 @@ Aplicação web de gestão financeira pessoal desenvolvida em **Streamlit** com 
 | 💳 **Cartão de Crédito** | Parcelamentos, projeção de 6 meses, múltiplos cartões |
 | 📋 **Extrato** | Consolidação com filtros avançados e exportação CSV |
 | 🎯 **Metas** | Acompanhamento visual de objetivos de economia |
-| 📈 **Relatórios** | Exportação em PDF, Excel e JSON |
+| � **Mobile-friendly** | Navegação e formulários otimizados para celular |
+| �📈 **Relatórios** | Exportação em PDF, Excel e JSON |
 | 📥 **Importador CSV** | Detecção automática de banco, sugestão de categorias |
 | ⚙️ **Configurações** | Customização de preferências, categorias, perfil |
 

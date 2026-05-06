@@ -150,7 +150,7 @@ Acesse: `http://localhost:8501`
 
 ### P: Posso usar em mobile?
 
-**R:** Sim, mas não é otimizado. App mobile nativo está no roadmap (P3).
+**R:** Sim. O app agora tem ajustes responsivos para celular: a navegação lateral colapsa para ícones e os formulários e gráficos se adaptam melhor a telas pequenas. Em aparelhos muito estreitos, ainda pode haver algum overflow em tabelas ou componentes complexos.
 
 ### P: Quem tem acesso aos meus dados?
 
